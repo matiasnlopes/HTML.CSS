@@ -15,6 +15,21 @@
     th{
         border: 1px solid black;
     }
+    table{
+        width: 400px;
+        height: 300px;
+    }
+    thead{
+        background-color: rgba(0, 0, 0, 0.603);
+        color: azure;
+    }
+    td.cor{
+        background-color: rgba(0, 0, 0, 0.603);
+        color: azure;
+    }
+    td.negrito{
+        font-weight: bold;
+    }
 </style>
 <body>
      <!--
@@ -35,44 +50,69 @@
                         table data = dado de tabela >>> td
     -->
     <table>
-       
-    
-        <thead>
-            <th colspan="4">Média de Exatas</th>
-            <th>0.0</th>
-            <tr>
-                <td rowspan="2">Humanas</td>
-                <td>Historia</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-            </tr>
-            <th>
+       <tr>
+        <td class="negrito" rowspan="4">Exatas</td>
+        <td>Mat</td>
+        <td>0.0</td>
+        <td>0.0</td>
+        <td>0.0</td>
+       </tr>
+       <tr>
+        <td>Física</td>
+        <td>0.0</td>
+        <td>0.0</td>
+        <td>0.0</td>
+       </tr>
+       <tr>
+        <td>Química</td>
+        <td>0.0</td>
+        <td>0.0</td>
+        <td>0.0</td>
+       </tr>
+       <tr>
+        <td>Biologia</td>
+        <td>0.0</td>
+        <td>0.0</td>
+        <td>0.0</td>
+       </tr>
+       <tr>
+        <td class="cor" colspan="4">Média Exatas</td>
+        <td class="cor">0.0</td>
+       </tr>
+       <tr>
+        <td class="negrito" rowspan="2">Humanas</td>
+        <td>História</td>
+        <td>0.0</td>
+        <td>0.0</td>
+        <td>0.0</td>
+       </tr>
+       <tr>
+        <td>Geografia</td>
+        <td>0.0</td>
+        <td>0.0</td>
+        <td>0.0</td>
+       </tr>
+       <tfoot>
+        <tr>
+        <td class="cor" colspan="4">Média de Humanas</td>
+        <td class="cor">0.0</td>
+         </tr>
+         </tfoot>
+
+         <thead>
+            
                 <tr>
-                <td rowspan="2">Area</td>
-                <td rowspan="2">Disciplinas</td>
-                <td colspan="2">Notas</td>
-                <td rowspan="2">Média</td>
-                 </tr>
-                <tr>
-                   <td>Nota 1</td>
-                   <td>Nota 2</td>
+                    <th rowspan="2" scope="col">Área</th>
+                    <th rowspan="2" scope="colgroup">Disciplinas</th>
+                    <th colspan="2" scope="colgroup">Notas</th>
+                    <th rowspan="2" scope="colgroup">Média</th>
                 </tr>
-                
-    
-            </th>
-        
-            <tr>
-                <td>Geografia</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-            </tr>
-        </thead>
-        <tfoot>
-            <th colspan="4">Média de Humanas</th>
-            <th>0.0</th>
-        </tfoot>
+                <tr>
+                    <th scope="colgroup"> Nota 1</th>
+                    <th scope="colgroup">Nota 2</th>
+                </tr>
+            
+         </thead>
     </table>
 </body>
 </html>
